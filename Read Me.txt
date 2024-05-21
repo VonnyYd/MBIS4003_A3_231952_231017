@@ -1,0 +1,22 @@
+**Assessment Description:** 
+In this project, you will work in groups. These will be formed from Session two’s class onward: therefore, it is vital that you attend this class. It is expected that groups work cohesively, constructively, and extensively in their own time. A Group Charter will be issued for all members to agree, sign and work with. Process, structure, and content: This course requires students to demonstrate their capacity to construct and develop a software project. This Assessment is a group assessment (3 to 4 students), where each student will contribute to the Python project as a collaborative effort among its group members. The group will submit their combined efforts as a single programming code directly into Moodle. The details of how to prepare the submission appear below.
+**Requirements	:**
+Computer-assisted instruction (CAI) refers to the use of computers in education. Write an application to help an elementary school student learn with your application.
+**1.	Calculator (1 Program)**
+Create a function that randomly generates and returns a tuple of two or more positive integers. Use that function’s result in your script to prompt the user with a math question (such as: “How much is 6 times 7?”). Varying the computer’s responses can help hold the student’s attention. Prepare various comments which are displayed for each answer. Possible responses to a correct answer should include 'Very good!', 'Nice work!' and 'Keep up the good work!' Possible responses to an incorrect answer should include 'No. Please try again.', 'Wrong. Try once more.' and 'No. Keep trying.' Allow the user to pick a type of arithmetic problem to study e.g., 1 means addition problems only, 2 means subtraction problems only, 3 means multiplication problems only, 4 means 2 division problems only avoid dividing by 0) and 5 means a random mixture of all these types. Collect data regarding number of exercises correct/incorrect and total exercises per topic.
+Allow the program to present descriptive statistical information in words/numbers and charts about each student (per user) and all students (all users) using the program.
+**2.	String (2 program)**
+Allow student to insert one arbitrary string. Save the letters of the string into a list. Design and perform the following tasks and display your results: 
+-	Summarizing letters in a string. Write a function that receives a string and returns a list of tuples containing the unique letters and their frequencies in the string. Test your function and display each letter with its frequency. Your function should ignore case sensitivity (that is, 'a' and 'A' are the same) and ignore spaces and punctuation. When done, write a statement that says whether the string has all the letters of the alphabet.
+-	Present descriptive statistics and graphs about the string data.
+-	Sorting letters in different order and removing duplicates
+-	Write a code that produces anagrams of a given string.
+An anagram of a string is another string formed by rearranging the letters in the first.
+**3.	Survey (3 program)**
+-	Ask your student to rate on a scale of 1 to 5 the quality of 20 products in a store, with 1 being “awful” and 5 being “excellent”. Place the 20 responses in a list. 1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3, 2, 3, 3, 2, 5.
+-	Determine and display the frequency of each rating. Use the built-in functions, statistics module functions and NumPy functions to display the following response statistics: minimum, maximum, range, mean, median, mode, variance, and standard deviation.
+-	Display a bar chart showing the response frequencies and their percentages of the total responses.
+**4.	Game (4 program + arcade manager or single mix game)**
+-	Each member of the group to develop a game based on words or numbers and including descriptive statistics. Combine the best of the group member solutions and create an arcade or single own mix of other games amazing and fun game, which offer other student to either rest or develop their brain skills through play. You can use a List (or another data structure we have covered) to be the environment for your world.
+**Program Expectations**
+Each member must be able to explain the working of the programs and its logic. The program should be proper indented, proper comments should be given, variable names and data types should be chosen appropriately. The program should compile and execute to display the result. The student must use programming constructs available in Python and follow coding standards.
