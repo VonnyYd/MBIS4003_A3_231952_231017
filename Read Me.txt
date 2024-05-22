@@ -1,22 +1,119 @@
-**Assessment Description:** 
-In this project, you will work in groups. These will be formed from Session two’s class onward: therefore, it is vital that you attend this class. It is expected that groups work cohesively, constructively, and extensively in their own time. A Group Charter will be issued for all members to agree, sign and work with. Process, structure, and content: This course requires students to demonstrate their capacity to construct and develop a software project. This Assessment is a group assessment (3 to 4 students), where each student will contribute to the Python project as a collaborative effort among its group members. The group will submit their combined efforts as a single programming code directly into Moodle. The details of how to prepare the submission appear below.
-**Requirements	:**
-Computer-assisted instruction (CAI) refers to the use of computers in education. Write an application to help an elementary school student learn with your application.
-**1.	Calculator (1 Program)**
-Create a function that randomly generates and returns a tuple of two or more positive integers. Use that function’s result in your script to prompt the user with a math question (such as: “How much is 6 times 7?”). Varying the computer’s responses can help hold the student’s attention. Prepare various comments which are displayed for each answer. Possible responses to a correct answer should include 'Very good!', 'Nice work!' and 'Keep up the good work!' Possible responses to an incorrect answer should include 'No. Please try again.', 'Wrong. Try once more.' and 'No. Keep trying.' Allow the user to pick a type of arithmetic problem to study e.g., 1 means addition problems only, 2 means subtraction problems only, 3 means multiplication problems only, 4 means 2 division problems only avoid dividing by 0) and 5 means a random mixture of all these types. Collect data regarding number of exercises correct/incorrect and total exercises per topic.
-Allow the program to present descriptive statistical information in words/numbers and charts about each student (per user) and all students (all users) using the program.
-**2.	String (2 program)**
-Allow student to insert one arbitrary string. Save the letters of the string into a list. Design and perform the following tasks and display your results: 
--	Summarizing letters in a string. Write a function that receives a string and returns a list of tuples containing the unique letters and their frequencies in the string. Test your function and display each letter with its frequency. Your function should ignore case sensitivity (that is, 'a' and 'A' are the same) and ignore spaces and punctuation. When done, write a statement that says whether the string has all the letters of the alphabet.
--	Present descriptive statistics and graphs about the string data.
--	Sorting letters in different order and removing duplicates
--	Write a code that produces anagrams of a given string.
-An anagram of a string is another string formed by rearranging the letters in the first.
-**3.	Survey (3 program)**
--	Ask your student to rate on a scale of 1 to 5 the quality of 20 products in a store, with 1 being “awful” and 5 being “excellent”. Place the 20 responses in a list. 1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3, 2, 3, 3, 2, 5.
--	Determine and display the frequency of each rating. Use the built-in functions, statistics module functions and NumPy functions to display the following response statistics: minimum, maximum, range, mean, median, mode, variance, and standard deviation.
--	Display a bar chart showing the response frequencies and their percentages of the total responses.
-**4.	Game (4 program + arcade manager or single mix game)**
--	Each member of the group to develop a game based on words or numbers and including descriptive statistics. Combine the best of the group member solutions and create an arcade or single own mix of other games amazing and fun game, which offer other student to either rest or develop their brain skills through play. You can use a List (or another data structure we have covered) to be the environment for your world.
-**Program Expectations**
-Each member must be able to explain the working of the programs and its logic. The program should be proper indented, proper comments should be given, variable names and data types should be chosen appropriately. The program should compile and execute to display the result. The student must use programming constructs available in Python and follow coding standards.
+Pseudocode Calculator :
+1.	Start 
+-	Show arithmetic problem type options to users:
+o	Addition
+o	Subtraction
+o	Multiplication
+o	Distribution
+o	Random mix
+-	Request input from the user to select the problem type 
+2.	Initialization Statistics
+-	correct_exercises = 0
+-	incorrect_exercises = 0
+-	total_exercises = 0
+3.	Build Main Loop functions (as long as continue is yes)
+a.	Create Questions
+b.	Display Questions
+c.	Check Answers
+d.	Show Feedback
+e.	Update Statistics
+f.	Show Statistics and Ask If The User Want to Continue
+g.	Check User Options
+4.	End 
+
+Pseudocode String :
+1.	Start 
+o	Start the program by asking the user to enter a string.
+2.	String Conversion
+o	Convert input string to lowercase.
+o	Remove all spaces and punctuation from the string.
+3.	Summarize Letters in Strings
+o	Create a function to summarize letters in a string.
+o	This function will accept a string as input.
+o	Calculate the frequency of each letter in the string.
+o	Return the result as a list of tuples containing unique letters and their frequencies.
+4.	Check the Complete Alphabet
+o	Check whether the processed string has all the letters from 'a' to 'z'.
+	If yes, display a message that the string contains all the letters of the alphabet.
+	Otherwise, display a message that the string does not contain all letters of the alphabet.
+5.	Present Descriptive Statistics and Graphics
+o	Create a function to provide descriptive statistics from string data.
+o	This function will accept a list of letter frequency tuples as input.
+o	Count the total number of letters.
+o	Show frequency of each letter.
+o	Create a bar graph showing the frequency of each letter using Matplotlib.
+6.	Sort Letters and Remove Duplication
+o	Create a function to sort letters alphabetically.
+o	This function will accept a processed string as input.
+o	Sort letters in a string and remove duplicates.
+o	Show sorting results.
+o	Create another function to sort letters by their frequency of occurrence.
+o	This function will accept a list of letter frequency tuples as input.
+o	Sort letters by frequency from most frequently appearing to least frequently.
+o	Show sorting results.
+7.	Generating Anagrams
+o	Create a function to generate anagrams from strings.
+o	This function will accept a processed string as input.
+o	Use permutations to generate all possible letter combinations.
+o	Return the result as a set of anagrams.
+8.	Run the Main Program
+o	Create the main function to run the entire program.
+o	Call functions to request user input.
+o	Call a function to encapsulate letters in a string.
+o	Call functions to display descriptive statistics and graphs.
+o	Call the function to sort letters and remove duplication.
+o	Call a function to generate anagrams from strings.
+o	Show all the results obtained from the functions.
+9.	End 
+o	The program ends after all steps have been completed
+
+Pseudocode Survey :
+1.	Start 
+2.	User Enters Rating
+o	Users can enter 20 ratings one by one.
+o	Ratings only range from 1 to 5 (1 = ‘awful’, 5 = ‘excellent’).
+3.	Collect Survey Data
+o	Collect survey data by asking users to enter their ratings.
+o	Save user-entered ratings in a list.
+4.	Calculating Frequencies and Statistics
+o	Define ratings from 1 to 5 and their frequency.
+o	Use the 'statistics' and 'numpy' libraries to calculate descriptive statistics from the entered ratings.
+5.	Display Bar Graph
+o	Use the 'matplotlib' library to display a bar graph based on the calculated frequency ratings.
+6.	End 
+
+Pseudocode Game 1 :
+1.	Start 
+2.	Display an Introductory Message
+3.	Game Introduction
+4.	Initialize the Game
+o	Show greetings to users.
+o	Generate random numbers that will be guessed by the user.
+o	Set the number of attempts (attempts) to 0.
+5.	Define the Number Guess Function
+o	Define the guess_the_number() function which will manage the logic of the number guessing game.
+6.	Request User Input
+o	Ask users to enter their guesses. (guess_the_number())
+7.	Increase the Number of Trials
+o	Add 1 to the number of attempts every time the user enters a guess.
+8.	Evaluate Guesses
+o	If the guess is correct, display a message that the guess is correct and exit the loop.
+o	If the guess is wrong, tell the user whether their guess was too high or too low.
+o	Repeat asking the user for input until they guess correctly.
+9.	Call the Guess Number Function
+o	In the game initialization, call the guess_the_number() function to start the game.
+10.	End 
+o	The program ends once the user guesses the number correctly.
+
+Pseudocode Game 2 :
+1.	Start 
+2.	Welcome players with the message "Welcome to Rock, Paper, Scissors!".
+3.	Prepare a selection list consisting of 'rock', 'paper', and 'scissors'.
+4.	Ask players to choose one of 'rock', 'paper', or 'scissors'.
+5.	Change player selections to lowercase for uniformity.
+6.	Randomly select a computer option from the selection list.
+7.	Display the options selected by the computer.
+o	If the player's choice is the same as the computer's choice, display the message "It's a tie!".
+o	If the player's choice beats the computer's choice, display the message "CONGRATULATIONS!!! YOU WIN!!! :)".
+o	If the computer's choice beats the player's choice, display the message "Sorry! You lost! :(".
+8.	End
